@@ -1,0 +1,5 @@
+#Properties
+#Wed Jun 05 16:47:18 CEST 2019
+maven.compiler.target=1.8
+maven.compiler.source=1.8
+browser=Mozilla
