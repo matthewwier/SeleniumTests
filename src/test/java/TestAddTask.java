@@ -44,7 +44,7 @@ public class TestAddTask {
     @Test
     public void testAddTask() throws InterruptedException {
         driver.get(baseUrl);
-
+        driver.manage().window().maximize();
         driver.findElement(By.cssSelector("input[type='email']")).sendKeys("adam@email.com");
         Thread.sleep(1000);
         driver.findElement(By.cssSelector("input[type='password']")).sendKeys("adam_password");

@@ -45,7 +45,7 @@ public class TestLogin {
     @Test
     public void testLogin() throws InterruptedException {
         driver.get(baseUrl);
-
+        driver.manage().window().maximize();
         driver.findElement(By.cssSelector("input[type='email']")).sendKeys("adam@email.com");
 
         Thread.sleep(1000);

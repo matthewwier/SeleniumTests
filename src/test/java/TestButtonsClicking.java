@@ -42,7 +42,7 @@ public class TestButtonsClicking {
     @Test
     public void testAddTask() throws InterruptedException {
         driver.get(baseUrl);
-
+        driver.manage().window().maximize();
         driver.findElement(By.linkText("Sign up")).click();
         Thread.sleep(1000);
         driver.findElement(By.linkText("Log in")).click();

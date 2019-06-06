@@ -1,5 +1,5 @@
 #Properties
-#Thu Jun 06 08:32:02 CEST 2019
+#Thu Jun 06 08:42:16 CEST 2019
 maven.compiler.target=1.8
 maven.compiler.source=1.8
-browser=Firefox
+browser=Opera

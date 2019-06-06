@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestAddTask
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.41 s - in TestAddTask
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.842 s - in TestAddTask
