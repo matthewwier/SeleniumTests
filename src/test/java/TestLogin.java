@@ -7,10 +7,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.html5.WebStorage;
+import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.remote.Augmenter;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.Properties;
 
 public class TestLogin {
@@ -21,18 +23,22 @@ public class TestLogin {
     @Before
     public void setUp() throws IOException {
         baseUrl = "http://localhost:5080";
-        java.io.InputStream is = this.getClass().getResourceAsStream("properties");
-        java.util.Properties p = new Properties();
+        InputStream is = this.getClass().getResourceAsStream("properties");
+        Properties p = new Properties();
         p.load(is);
         String browser = p.getProperty("browser");
         if(browser.equals("Chrome")){
             System.setProperty("webdriver.chrome.driver","./chromedriver" );
             driver = new ChromeDriver();
-        }else{
+        }else if(browser.equals("Firefox")){
             System.setProperty("webdriver.gecko.driver", "./geckodriver");
             DesiredCapabilities capabilities = DesiredCapabilities.firefox();
             capabilities.setCapability("marionette", true);
             driver = new FirefoxDriver();
+        }
+        else if(browser.equals("Opera")){
+            System.setProperty("webdriver.opera.driver", "./operadriver");
+            driver = new OperaDriver();
         }
     }
 

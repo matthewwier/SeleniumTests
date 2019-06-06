@@ -23,7 +23,7 @@
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <browser>Mozilla</browser>
+        <browser>Chrome</browser>
     </properties>
     <build>
         <finalName>maven-unit-test</finalName>
