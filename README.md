@@ -5,8 +5,8 @@ Commands:
 
 mvn test // run all tests
 
-mvn -Dbrowser=Chrome test // run tests on Chrome browser
+mvn -Dbrowser=Chrome test // run tests on Chrome 73 browser
 
-mvn -Dbrowser=Firefox test // run tests on Firefox browser
+mvn -Dbrowser=Firefox test // run tests on Firefox 67 browser
 
-mvn -Dbrowser=Opera test // run tests on Opera browser
+mvn -Dbrowser=Opera test // run tests on Opera 60 browser
