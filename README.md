@@ -1,4 +1,4 @@
-# selenium-tests
+# Selenium Tests
 Web application testing with Selenium 3.141.59 and JUnit 4.10. It's possible to run test suites on Chrome, Firefox and Opera by specifying -Dbrowser parameter.
 
 Commands:
